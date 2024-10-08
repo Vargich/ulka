@@ -7444,7 +7444,8 @@ button.bg-dark:hover {
 }
 
 .rounded {
-    border-radius: .25rem !important
+    /* border-radius: .25rem !important */
+    border-radius: 50px !important
 }
 
 .rounded-top {
@@ -11554,7 +11555,7 @@ section h2 {
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
         color     : #fff;
-        background: #F4B7B6
+        background: #F4B7B6;
     }
     .navbar-brand::after
         {
@@ -11781,7 +11782,10 @@ a:hover {
 }
 
 .btn {
-    border-width: 2px
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-primary {
@@ -11875,6 +11879,11 @@ a:hover {
 }
 
 .about__image{
-    display: block;
-    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 10px rgba(0,0,0,.15);
+}
+
+.lh10{
+    line-height: 3rem;
 }
