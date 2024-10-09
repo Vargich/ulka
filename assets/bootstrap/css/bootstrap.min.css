@@ -2860,43 +2860,6 @@ fieldset:disabled a.btn {
     pointer-events: none
 }
 
-.btn-primary {
-    color: #fff
-}
-
-.btn-primary.focus,
-.btn-primary:focus,
-.btn-primary:hover {
-    color           : #fff;
-    background-color: #149a80;
-    border-color    : #128f76
-}
-
-.btn-primary.focus,
-.btn-primary:focus {
-    box-shadow: 0 0 0 .2rem rgba(59, 198, 171, .5)
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled {
-    color           : #fff;
-    background-color: #18bc9c;
-    border-color    : #18bc9c
-}
-
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
-    color           : #fff;
-    background-color: #128f76;
-    border-color    : #11836d
-}
-
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(59, 198, 171, .5)
-}
 
 .btn-secondary {
     color: #fff
@@ -7356,7 +7319,7 @@ button.bg-dark:hover {
 }
 
 .bg-white {
-    background-color: #fff !important
+    /* background-color: #fff !important */
 }
 
 .bg-transparent {
@@ -11790,14 +11753,21 @@ a:hover {
 
 .bg-primary {
     background-color: #f4ebda !important;
-    border-radius: 50px 50px;
+    border-radius: 2rem;
 }
 
 .bg-secondary {
     /* background-color: #2c3e50 !important; */
     background-color: #987056 !important;
-    border-radius: 50px 50px;
+    border-radius: 2rem;
     margin: 20px 10%;
+    color: white;
+}
+
+.bg-white{
+    background-color: white;
+    border-radius: 50px 50px;
+    color: black;
 }
 
 .text-primary {
@@ -11808,28 +11778,18 @@ a:hover {
     color: #2c3e50 !important
 }
 
-.btn-primary {
-    background-color: #18bc9c;
-    border-color    : #18bc9c
-}
 
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover {
-    background-color: #128f76;
-    border-color    : #128f76
-}
 
 .btn-secondary {
-    background-color: #2c3e50;
-    border-color    : #2c3e50
+    background-color: #D16864;
+    border-color    : #D16864
 }
 
 .btn-secondary:active,
 .btn-secondary:focus,
 .btn-secondary:hover {
-    background-color: #1a252f;
-    border-color    : #1a252f
+    background-color: #c43f3b;
+    border-color    : #c43f3b
 }
 
 .img__logo{
@@ -11843,6 +11803,11 @@ a:hover {
     position: relative;
     top: 50%;
     transform: translate(0, calc(-50%));
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .red{
@@ -11854,6 +11819,7 @@ a:hover {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  padding: 0 5px;
 }
 
 .vertical-center{
