@@ -11885,5 +11885,9 @@ a:hover {
 }
 
 .lh10{
+<<<<<<< HEAD
     line-height: 3em;
+=======
+    line-height: 3rem;
+>>>>>>> e3c27f1377ee65b4e9c0a766af4f32fe75b7ad4a
 }
