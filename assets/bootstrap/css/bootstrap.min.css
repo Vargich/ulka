@@ -600,6 +600,10 @@ pre code {
     margin-left  : auto
 }
 
+#social-mobile{
+    display: block;
+}
+
 @media (min-width:576px) {
 
     .container,
@@ -625,6 +629,11 @@ pre code {
     .container-sm {
         max-width: 960px
     }
+    #social-mobile{
+        display: none;
+    }
+    
+    
 }
 
 @media (min-width:1200px) {
@@ -4723,11 +4732,9 @@ input[type=submit].btn-block {
 
 .navbar-toggler {
     padding         : .25rem .75rem;
-    font-size       : 1.25rem;
+    font-size       : 2rem;
     line-height     : 1;
     background-color: transparent;
-    border          : 1px solid transparent;
-    border-radius   : .25rem
 }
 
 .navbar-toggler:focus,
@@ -7402,13 +7409,17 @@ button.bg-dark:hover {
     border-color: #fff !important
 }
 
+.border-none {
+    border: none
+}
+
 .rounded-sm {
     border-radius: .2rem !important
 }
 
 .rounded {
     /* border-radius: .25rem !important */
-    border-radius: 50px !important
+    border-radius: 2rem !important
 }
 
 .rounded-top {
@@ -11480,7 +11491,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #F4B7B6
+    color: #D16864
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
@@ -11493,8 +11504,9 @@ section h2 {
 }
 
 #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding  : .8rem
+    /* font-size: 100%; */
+    padding  : .8rem;
+    font-size: 1.5rem;
 }
 
 @media (min-width:992px) {
@@ -11518,7 +11530,7 @@ section h2 {
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
         color     : #fff;
-        background: #F4B7B6;
+        background: #D16864;
     }
     .navbar-brand::after
         {
@@ -11538,10 +11550,12 @@ section h2 {
 }
 
 header.masthead {
-    /* padding-top   : calc(6rem + 72px); */
-    /* padding-bottom: 6rem */
-    height: 100vh;
+    padding-top   : calc(6rem + 72px);
+    padding-bottom: 6rem;
+    /* height: calc(100vh - calc(6rem + 72px+6rem)); */
     border-radius:  0 0 50px 50px;
+    min-height: 773px;
+    height: 100vh;
 }
 
 header.masthead h1 {
@@ -11557,7 +11571,8 @@ header.masthead h2 {
 
 @media (min-width:992px) {
     header.masthead {
-        padding-top   : calc(6rem + 106px);
+        padding-top : calc(6rem + 106px);
+        min-height: 800px;
         padding-bottom: 6rem
     }
 
@@ -11800,9 +11815,9 @@ a:hover {
 
 
 .container_head{
-    position: relative;
+    /* position: relative;
     top: 50%;
-    transform: translate(0, calc(-50%));
+    transform: translate(0, calc(-50%)); */
     color: inherit;
     display: flex;
     justify-content: center;
@@ -11849,6 +11864,27 @@ a:hover {
     height: auto;
     box-shadow: 10px 10px rgba(0,0,0,.15);
 }
+.navbar-toggler .bar {
+    display: block;
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+#mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
 .lh10{
 <<<<<<< HEAD
