@@ -4687,8 +4687,8 @@ input[type=submit].btn-block {
 
 .navbar-brand {
     display       : inline-block;
-    padding-top   : .3125rem;
-    padding-bottom: .3125rem;
+    /* padding-top   : .3125rem;
+    padding-bottom: .3125rem; */
     margin-right  : 1rem;
     font-size     : 1.25rem;
     line-height   : inherit;
@@ -7424,7 +7424,7 @@ button.bg-dark:hover {
 
 .rounded {
     /* border-radius: .25rem !important */
-    border-radius: 2rem !important
+    border-radius: 1rem !important
 }
 
 .rounded-top {
@@ -11492,7 +11492,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff
+    color: #2c3e50
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -11505,7 +11505,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: #F4B7B6
+    /* color: #F4B7B6 */
 }
 
 #mainNav .navbar-toggler {
@@ -11534,8 +11534,8 @@ section h2 {
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
-        color     : #fff;
-        background: #D16864;
+        /* color: #323033; */
+        background: #e2d7c6;
     }
     .navbar-brand::after
         {
@@ -11733,7 +11733,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c
+    color: #D16864
 }
 
 form .row:first-child .floating-label-form-group {
@@ -11757,15 +11757,7 @@ form .row:first-child .floating-label-form-group {
     background-color: #1a252f
 }
 
-a {
-    color: #18bc9c
-}
 
-a:active,
-a:focus,
-a:hover {
-    color: #128f76
-}
 
 .btn {
     border-width: 2px;
@@ -11790,10 +11782,11 @@ a:hover {
 
 .bg-secondary {
     /* background-color: #2c3e50 !important; */
-    background-color: #987056 !important;
-    border-radius: 2rem;
+    /* background-color: #987056 !important; */
+    background-color: #FAF1E2;
+    border-radius: 1rem;
     margin: 20px 10%;
-    color: white;
+    /* color: #323033; */
 }
 
 .bg-white{
@@ -11865,7 +11858,7 @@ a:hover {
     flex-direction: column;
 }
 
-.navbar-brand::after
+/* .navbar-brand::after
 {
     content: "by J. Losik";
     font-size: .5em;
@@ -11874,7 +11867,7 @@ a:hover {
     line-height: 0;
     justify-content: center;
     text-transform: none;
-}
+} */
 
 .about__image{
     max-width: 100%;
