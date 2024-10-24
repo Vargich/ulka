@@ -3190,14 +3190,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-    color       : #2c3e50;
-    border-color: #2c3e50
+    color       : #323033;
+    border-color: #323033
 }
 
 .btn-outline-secondary:hover {
     color           : #fff;
-    background-color: #2c3e50;
-    border-color    : #2c3e50
+    background-color: #323033;
+    border-color    : #323033
 }
 
 .btn-outline-secondary.focus,
@@ -11536,6 +11536,7 @@ section h2 {
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
         /* color: #323033; */
         background: #e2d7c6;
+        border-radius: 1rem;
     }
     .navbar-brand::after
         {
@@ -11926,3 +11927,17 @@ form .row:first-child .floating-label-form-group {
     transform: translateX(-50%);
   padding-bottom: 10px;
   }
+
+  .social {
+    z-index: 1042;
+    right  : 1rem;
+    top : 2rem;
+
+}
+
+.social a {
+    width           : 3.5rem;
+    height          : 3.5rem;
+    background-color: rgba(33, 37, 41, .5);
+    line-height     : 3.1rem
+}
