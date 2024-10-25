@@ -11928,16 +11928,21 @@ form .row:first-child .floating-label-form-group {
   padding-bottom: 10px;
   }
 
-  .social {
+  .social>div {
     z-index: 1042;
     right  : 1rem;
     top : 2rem;
 
 }
 
-.social a {
+.social>div> a {
     width           : 3.5rem;
     height          : 3.5rem;
     background-color: rgba(33, 37, 41, .5);
-    line-height     : 3.1rem
+    line-height     : 3.1rem;
+    border: none;
+}
+
+.social>div:last-child{
+    top: 6rem;
 }
