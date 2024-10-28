@@ -499,7 +499,7 @@ mark {
     align-items: center;
 }
 
-.list-inline-item:not(:last-child) {
+.btn-social-item:not(:last-child) {
     margin-right: .5rem
 }
 
@@ -640,7 +640,12 @@ pre code {
     
     
 }
-
+@media (max-width:992px)
+{
+    .social{
+        display: none;
+    } 
+}
 @media (min-width:1200px) {
 
     .container,
@@ -1494,6 +1499,7 @@ pre code {
         flex-grow              : 1;
         max-width              : 100%
     }
+    
 
     .row-cols-lg-1>* {
         -ms-flex : 0 0 100%;
@@ -2837,7 +2843,7 @@ textarea.form-control.is-invalid {
     background-color   : transparent;
     border             : 1px solid transparent;
     padding            : .375rem .75rem;
-    font-size          : 1rem;
+    font-size          : 2rem;
     line-height        : 1.5;
     border-radius      : 1rem;
     transition         : color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
@@ -3615,6 +3621,7 @@ input[type=submit].btn-block {
         right: 0;
         left : auto
     }
+    
 }
 
 @media (min-width:1200px) {
@@ -6547,7 +6554,7 @@ a.close.disabled {
 }
 
 .modal-header .close {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem ;
     margin : -1rem -1rem -1rem auto
 }
 
@@ -6560,7 +6567,9 @@ a.close.disabled {
     position: relative;
     -ms-flex: 1 1 auto;
     flex    : 1 1 auto;
-    padding : 1rem
+    padding : 0 1rem
+    
+    
 }
 
 .modal-footer {
@@ -11385,9 +11394,12 @@ h6 {
     font-weight: 700;
     /* font-family: Montserrat */
 }
-
-hr.star-dark,
-hr.star-light {
+.list-inline-item:not(:last-child)
+{
+    padding-right: 20px;
+}
+hr.heart-dark,
+hr.heart-light {
     max-width    : 15rem;
     padding      : 0;
     text-align   : center;
@@ -11397,31 +11409,31 @@ hr.star-light {
     margin-bottom: 2.5rem
 }
 
-hr.star-dark:after,
-hr.star-light:after {
+hr.heart-dark:after,
+hr.heart-light:after {
     position   : relative;
     top        : -.8em;
     display    : inline-block;
     padding    : 0 .25em;
-    content    : "\f005";
+    content    : "\f08a";
     font-family: FontAwesome;
     font-size  : 2em
 }
 
-hr.star-light {
+hr.heart-light {
     border-color: #fff
 }
 
-hr.star-light:after {
+hr.heart-light:after {
     color           : #fff;
     background-color: #18bc9c
 }
 
-hr.star-dark {
+hr.heart-dark {
     border-color: #2c3e50
 }
 
-hr.star-dark:after {
+hr.heart-dark:after {
     color           : #2c3e50;
     background-color: #fff
 }
@@ -11610,7 +11622,7 @@ header.masthead h2 {
 .portfolio .portfolio-item .portfolio-item-caption {
     transition      : all .5s ease;
     opacity         : 0;
-    background-color: rgba(24, 188, 156, .9)
+    background-color: rgba(224, 224, 101, 0.26)
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -11675,14 +11687,14 @@ header.masthead h2 {
 }
 
 .close {
-    color    : #18bc9c;
+    color    : #323033;
     font-size: 3rem;
     opacity  : 1
 }
 
 .close:not(:disabled):not(.disabled):focus,
 .close:not(:disabled):not(.disabled):hover {
-    color  : #128f76;
+    color  : #211F21;
     opacity: 1
 }
 
@@ -11945,4 +11957,16 @@ form .row:first-child .floating-label-form-group {
 
 .social>div:last-child{
     top: 6rem;
+}
+
+.box-shadow{
+    -webkit-box-shadow: 4px 5px 18px 0px #595656; 
+box-shadow: 4px 5px 18px 0px #595656;
+}
+
+@media (max-width:576px) {
+
+    .optm h3{
+        font-size: 1.5rem;
+    }
 }
