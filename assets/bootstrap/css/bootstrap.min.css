@@ -599,10 +599,10 @@ pre code {
 .container-sm,
 .container-xl {
     width        : 100%;
-    padding-right: 15px;
+    /* padding-right: 15px;
     padding-left : 15px;
     margin-right : auto;
-    margin-left  : auto
+    margin-left  : auto */
 }
 
 #social-mobile{
@@ -11443,11 +11443,11 @@ section {
    
 }
 
-#portfolio {
-    /* padding: 6rem 0; */
-    padding-top: calc(6rem - 40px);
-    padding-bottom: 6rem;
-}
+/* #portfolio {
+    padding: 6rem 0; 
+    
+    height: max-content;
+} */
 
 section h2 {
     font-size  : 2.25rem;
@@ -11511,10 +11511,10 @@ section h2 {
     color: #D16864
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:active,
+/* #mainNav .navbar-nav li.nav-item a.nav-link:active,
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
     color: #fff
-}
+} */
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
     /* color: #F4B7B6 */
@@ -11609,12 +11609,20 @@ header.masthead h2 {
 }
 
 .portfolio {
-    /* margin-bottom: -15px */
+    height:fit-content;
+    padding-top: calc(6rem - 40px);
+    padding-bottom: 6rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    left: -45px;
 }
 
 .portfolio .portfolio-item {
     position     : relative;
-    display      : block;
+    /* display      : block; */
+    
     max-width    : 25rem;
     margin-bottom: 15px
 }
@@ -11969,4 +11977,9 @@ box-shadow: 4px 5px 18px 0px #595656;
     .optm h3{
         font-size: 1.5rem;
     }
+}
+
+.br>div>a>div, .br>div>a>img{
+    color: green;
+    border-radius: 1rem;
 }
