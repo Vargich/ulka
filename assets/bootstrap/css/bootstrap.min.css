@@ -599,10 +599,10 @@ pre code {
 .container-sm,
 .container-xl {
     width        : 100%;
-    /* padding-right: 15px;
+    padding-right: 15px;
     padding-left : 15px;
     margin-right : auto;
-    margin-left  : auto */
+    margin-left  : auto
 }
 
 #social-mobile{
@@ -11612,11 +11612,11 @@ header.masthead h2 {
     height:fit-content;
     padding-top: calc(6rem - 40px);
     padding-bottom: 6rem;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    left: -45px;
+    /* left: -45px; */
 }
 
 .portfolio .portfolio-item {
