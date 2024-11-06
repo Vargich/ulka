@@ -617,6 +617,15 @@ pre code {
     }
 }
 
+@media (max-width:1100px) {
+    #portfolio span {
+        display: none;
+    }
+}
+
+
+
+
 @media (min-width:768px) {
     .container_portfolio,
     .container,
@@ -10386,7 +10395,7 @@ button.bg-dark:hover {
         padding: 1rem !important
     }
 
-    .pt-lg-3,
+    /* .pt-lg-3,
     .py-lg-3 {
         padding-top: 1rem !important
     }
@@ -10404,7 +10413,7 @@ button.bg-dark:hover {
     .pl-lg-3,
     .px-lg-3 {
         padding-left: 1rem !important
-    }
+    } */
 
     .p-lg-4 {
         padding: 1.5rem !important
@@ -11990,4 +11999,17 @@ box-shadow: 4px 5px 18px 0px #595656;
     right: 40px; */
     /* position: relative;
     left: -40px; */
+}
+@media (max-width:1082px) {
+    .px-lg-3{
+        
+        padding: 1rem .25rem !important;
+        letter-spacing: normal;
+    }
+}
+@media (min-width:1083px) {
+    .px-lg-3{
+        
+        padding: 1rem 1rem !important
+    }
 }
