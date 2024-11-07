@@ -613,7 +613,7 @@ pre code {
     .container_portfolio,
     .container,
     .container-sm {
-        max-width: 540px
+        /* max-width: 540px */
     }
 }
 
@@ -631,7 +631,7 @@ pre code {
     .container,
     .container-md,
     .container-sm {
-        max-width: 720px
+        /* max-width: 720px */
     }
 }
 
@@ -641,7 +641,7 @@ pre code {
     .container-lg,
     .container-md,
     .container-sm {
-        max-width: 960px
+        /* max-width: 960px */
     }
     #social-mobile{
         display: none;
@@ -662,7 +662,7 @@ pre code {
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1140px
+        /* max-width: 1140px */
     }
 }
 
@@ -11493,7 +11493,8 @@ section h2 {
     width           : 3.5rem;
     height          : 3.5rem;
     background-color: rgba(33, 37, 41, .5);
-    line-height     : 3.1rem
+    line-height     : 3.1rem;
+
 }
 
 #mainNav {
@@ -11512,7 +11513,7 @@ section h2 {
     letter-spacing: .0625rem
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link {
+#mainNav .navbar-nav li.nav-item a.nav-link, a {
     color: #2c3e50
 }
 
@@ -11622,12 +11623,29 @@ header.masthead h2 {
     padding-top: calc(6rem - 40px);
     padding-bottom: 6rem;
    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    
+    /* flex-direction: row; */
+    /* justify-content: center; */
     /* position: relative;
     left: -39px; */
 }
+.container_portfolio{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    display: flex;
+ grid-column: 2;
+    /* justify-content: center;
+    align-content: center; */
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 .portfolio .portfolio-item {
     position     : relative;
@@ -11961,7 +11979,7 @@ form .row:first-child .floating-label-form-group {
   .social>div {
     z-index: 1042;
     right  : 1rem;
-    top : 2rem;
+    top : 20px;
 
 }
 
@@ -11974,7 +11992,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .social>div:last-child{
-    top: 6rem;
+    top: 80px;
 }
 
 .box-shadow{
@@ -11994,12 +12012,6 @@ box-shadow: 4px 5px 18px 0px #595656;
     border-radius: 1rem;
 }
 
-.container_portfolio{
-    /* position: relative;
-    right: 40px; */
-    /* position: relative;
-    left: -40px; */
-}
 @media (max-width:1082px) {
     .px-lg-3{
         
