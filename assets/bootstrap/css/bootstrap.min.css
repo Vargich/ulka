@@ -6526,9 +6526,10 @@ a.close.disabled {
     pointer-events    : auto;
     background-color  : #fff;
     background-clip   : padding-box;
-    border            : 1px solid rgba(0, 0, 0, .2);
+    /* border            : 1px solid rgba(0, 0, 0, .2); */
     border-radius     : .3rem;
-    outline           : 0
+    outline           : 0;
+    /* overflow: hidden; */
 }
 
 .modal-backdrop {
@@ -11557,8 +11558,13 @@ section h2 {
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
         /* color: #323033; */
-        background: #e2d7c6;
-        border-radius: 1rem;
+        /* background: #e2d7c6;
+        border-radius: 1rem; */
+        background: rgba(255, 255, 255, 0.2); /* Цвет фона с прозрачностью */
+    /* padding: 30px; */
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    backdrop-filter: blur(20px);
     }
     .navbar-brand::after
         {
@@ -11967,6 +11973,23 @@ form .row:first-child .floating-label-form-group {
     /* border-radius: 100px; */
   }
 
+  .modal::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .modal::-webkit-scrollbar-track {
+    /* background-color: #e4e4e4; */
+    background-color: transparent;
+    /* border:1px solid #798215; */
+    
+    border-radius: 100px;
+  }
+  
+  .modal::-webkit-scrollbar-thumb {
+    background-color: #D16864;
+    /* border-radius: 100px; */
+  }
+
   .license{
 
   position: absolute; 
@@ -12025,3 +12048,13 @@ box-shadow: 4px 5px 18px 0px #595656;
         padding: 1rem 1rem !important
     }
 }
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.2); /* Цвет фона с прозрачностью */
+    /* padding: 30px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    backdrop-filter: blur(20px); /* Эффект матового стекла */
+    /* width: 100%; */
+    /* max-width: 500px; */
+  }
