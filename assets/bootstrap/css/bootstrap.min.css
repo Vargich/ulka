@@ -11406,7 +11406,7 @@ h6 {
 }
 .list-inline-item:not(:last-child)
 {
-    padding-right: 20px;
+    padding-right: 5px;
 }
 hr.heart-dark,
 hr.heart-light {
@@ -12058,3 +12058,27 @@ box-shadow: 4px 5px 18px 0px #595656;
     /* width: 100%; */
     /* max-width: 500px; */
   }
+
+ p.mb-0.lh10{
+    font-size: 2rem;
+ }
+
+ @media (max-width:600px) {
+    p.mb-0.lh10{
+        font-size: 1.5rem !important;
+     }
+ }
+ #about > div > h1 {
+    text-align: center;
+
+ }
+
+ #about > div > h1>span{
+    text-transform: uppercase;
+
+ }
+ .container>.row>div:nth-child(even){
+    height: 10px;
+    width: 30px;
+    bottom: 1px solid;
+ }
